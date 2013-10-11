@@ -22,18 +22,40 @@
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.3.2.css" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <title>Hello World</title>
     </head>
     <body>
-        <div class="app">
-            <h1>PhoneGap</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
+        <div data-role="page">
+			<div data-role="header">
+				<h1>Avatar Wars</h1>
+			</div>
+            <div data-role="content">
+				<h2>Pick a character</h2>
+				<ul data-role="listview" data-inset="true" data-filter="true" data-theme="a">
+					<li><a href="#">Aang</a></li>
+					<li><a href="#">Katara</a></li>
+					<li><a href="#">Sokka</a></li>
+					<li><a href="#">Toph</a></li>
+					<li><a href="#">Zuko</a></li>
+					<li><a href="#">Appa</a></li>
+					<li><a href="#">Momo</a></li>
+					<li><a href="#">Uncle Iroh</a></li>
+					<li><a href="#">Azula</a></li>
+					<li><a href="#">Suki</a></li>
+					<li><a href="#">Mai</a></li>
+					<li><a href="#">Ty Lee</a></li>
+					<li><a href="#">Fire Lord Ozai</a></li>
+					<li><a href="#">Admiral Zhao</a></li>
+					<li><a href="#">Long Feng</a></li>
+					<li><a href="#">Avatar Roku</a></li>
+				</ul>
+			</div>
         </div>
         <script type="text/javascript" src="phonegap.js"></script>
+		<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.3.2.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();
