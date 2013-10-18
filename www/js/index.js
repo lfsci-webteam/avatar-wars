@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -37,13 +37,22 @@ var app = {
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
-        var parentElement = document.getElementById(id);
-        var listeningElement = parentElement.querySelector('.listening');
-        var receivedElement = parentElement.querySelector('.received');
-
-        listeningElement.setAttribute('style', 'display:none;');
-        receivedElement.setAttribute('style', 'display:block;');
-
-        console.log('Received Event: ' + id);
+		/*var db = window.openDatabase("test", "1.0", "Test DB", 1000000);
+		db.transaction(populateDB, errorCB, successCB);*/
     }
+	
+	/*populateDB: function(tx) {
+		tx.executeSql('DROP TABLE IF EXISTS DEMO');
+		tx.executeSql('CREATE TABLE IF NOT EXISTS DEMO (id unique, data)');
+		tx.executeSql('INSERT INTO DEMO (id, data) VALUES (1, "First row")');
+		tx.executeSql('INSERT INTO DEMO (id, data) VALUES (2, "Second row")');
+	}
+	
+	errorCB: function(err) {
+		alert("Error processing SQL: " + err.code);
+	}
+	
+	successCB: function() {
+		alert("Success!");
+	}*/
 };
