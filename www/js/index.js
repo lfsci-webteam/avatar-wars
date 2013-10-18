@@ -1,4 +1,4 @@
-﻿/*
+/*
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -37,11 +37,11 @@ var app = {
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
-		/*var db = window.openDatabase("test", "1.0", "Test DB", 1000000);
-		db.transaction(populateDB, errorCB, successCB);*/
+		var db = window.openDatabase("test", "1.0", "Test DB", 1000000);
+		db.transaction(populateDB, errorCB, successCB);
     }
 	
-	/*populateDB: function(tx) {
+	populateDB: function(tx) {
 		tx.executeSql('DROP TABLE IF EXISTS DEMO');
 		tx.executeSql('CREATE TABLE IF NOT EXISTS DEMO (id unique, data)');
 		tx.executeSql('INSERT INTO DEMO (id, data) VALUES (1, "First row")');
@@ -54,5 +54,5 @@ var app = {
 	
 	successCB: function() {
 		alert("Success!");
-	}*/
+	}
 };
